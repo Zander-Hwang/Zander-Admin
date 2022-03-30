@@ -1,13 +1,26 @@
 {
-  "name": "vite-project",
-  "private": true,
+  "name": "zander-admin",
+  "private": false,
   "version": "0.0.0",
+  "description": "Vite2.x + Vue3 + TypeScript 后台管理模板",
+  "author": "Zander",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "preinstall": "npx only-allow yarn"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ablesons/Zander-Admin.git"
+  },
+  "keywords": [
+    "Vite",
+    "Vue3",
+    "TypeScript",
+    "Template"
+  ],
   "dependencies": {
     "vue": "^3.2.25"
   },
@@ -16,5 +29,13 @@
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
     "vue-tsc": "^0.29.8"
-  }
+  },
+  "engines": {
+    "node": ">=14.18.1",
+    "yarn": ">=1.22.15"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
