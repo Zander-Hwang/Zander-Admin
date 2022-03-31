@@ -1,9 +1,9 @@
 /**
  * @Description: Windi CSS 配置
  * @HomePage https://cn.windicss.org/
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/18 16:09
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/18 16:09
  */
 import { defineConfig } from 'windicss/helpers';

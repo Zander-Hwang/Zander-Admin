@@ -1,9 +1,9 @@
 /**
  * @Description: Vite插件。svgIcon组件。
  * @PageHome: https://github.com/anncwb/vite-plugin-svg-icons
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/21 14:43
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/21 14:43
  */
 

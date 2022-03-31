@@ -1,9 +1,9 @@
 /**
  * @Description: 用于打包和输出gzip。
  * @PageHome: https://github.com/anncwb/vite-plugin-compression
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/21 16:01
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/21 16:01
  */
 import type { Plugin } from 'vite';

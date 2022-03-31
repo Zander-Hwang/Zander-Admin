@@ -1,9 +1,9 @@
 /**
  * @Description: 用于压缩生产环境输出的映像资源文件
  * @PageHome: https://github.com/anncwb/vite-plugin-imagemin
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/21 15:53
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/21 15:53
  */
 import type { Plugin } from 'vite';

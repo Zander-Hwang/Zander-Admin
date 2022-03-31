@@ -1,8 +1,8 @@
 /**
  * @Description: 配置和注册全局指令
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/3/27 10:06
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/3/27 10:06
  */
 import type { App } from 'vue';

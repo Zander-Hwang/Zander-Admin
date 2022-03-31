@@ -1,9 +1,9 @@
 /**
  * @Description: 模拟插件的开发和生产。
  * @PageHome： https://github.com/anncwb/vite-plugin-mock
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/21 11:00
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/21 11:00
  */
 import { viteMockServe } from 'vite-plugin-mock';

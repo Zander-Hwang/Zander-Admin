@@ -1,8 +1,8 @@
 /**
  * @Description: 监控元素大小变化
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/3/27 9:48
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/3/27 9:48
  */
 import type { Directive, DirectiveBinding, VNode, App } from 'vue';
@@ -24,8 +24,8 @@ const resizeDirective: Directive = {
         emitter.emit('resize', { detail: { width, height } });
       } else {
         vnode &&
-        vnode.el &&
-        vnode.el.dispatchEvent(new CustomEvent('resize', { detail: { width, height } }));
+          vnode.el &&
+          vnode.el.dispatchEvent(new CustomEvent('resize', { detail: { width, height } }));
       }
     });
   },

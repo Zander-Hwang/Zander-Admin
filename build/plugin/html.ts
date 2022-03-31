@@ -1,9 +1,9 @@
 /**
  * @Description: 在index.html中最小化和使用EJS模板语法的插件。
  * @PageHome： https://github.com/anncwb/vite-plugin-html
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/21 11:00
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/21 11:00
  */
 import type { PluginOption } from 'vite';

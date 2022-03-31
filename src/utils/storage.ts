@@ -1,8 +1,8 @@
 /**
  * @Description: 浏览器缓存方法
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/3/3 18:22
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/3/3 18:22
  */
 interface ProxyStorage {
@@ -17,7 +17,7 @@ interface ProxyStorage {
  */
 class storageProxy implements ProxyStorage {
   protected storage: ProxyStorage;
-  protected prefix: string
+  protected prefix: string;
 
   constructor(storageModel: ProxyStorage, prefix?: string) {
     this.storage = storageModel;
@@ -47,7 +47,7 @@ class storageProxy implements ProxyStorage {
     }
     const options: { [propsName: string]: any } = {
       storeTime: time,
-      prefix: this.prefix
+      prefix: this.prefix,
     };
     return options;
   }
@@ -66,7 +66,7 @@ class storageProxy implements ProxyStorage {
     if (storeData) {
       const {
         value,
-        options: { storeTime }
+        options: { storeTime },
       } = JSON.parse(storeData);
       // 如果从存储中获取的时间大于当前的时间或者等于0的时候表示当前的localStorage有效
       if (storeTime > new Date().getTime()) {

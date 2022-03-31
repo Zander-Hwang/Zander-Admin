@@ -1,8 +1,8 @@
 /**
  * @Description: 设备工具类
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/3/27 12:01
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/3/27 12:01
  */
 interface deviceInter {

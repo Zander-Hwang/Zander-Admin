@@ -1,8 +1,8 @@
 /**
  * @Description: 校验
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/3/2 16:52
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/3/2 16:52
  */
 const toString = Object.prototype.toString;

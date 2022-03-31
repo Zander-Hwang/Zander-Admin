@@ -1,9 +1,9 @@
 /**
  * @Description: Vite plugin for website theme color switching
  * @PageHome: https://github.com/GitOfZGT/vite-plugin-theme-preprocessor
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/21 15:29
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/21 15:29
  */
 import themePreprocessorPlugin from '@zougt/vite-plugin-theme-preprocessor';

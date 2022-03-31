@@ -1,8 +1,8 @@
 /**
  * @Description: Package file volume analysis
- * @Author: Ableson
+ * @Author: Zander
  * @Date: 2022/2/21 15:25
- * @LastEditors: Ableson
+ * @LastEditors: Zander
  * @LastEditTime: 2022/2/21 15:25
  */
 import type { Plugin } from 'vite';
