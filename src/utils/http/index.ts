@@ -5,7 +5,7 @@ import { http } from '/@/utils/http/request';
  * get请求
  * @param option
  */
-export const $get = (option: HttpRequestConfig): Promise<T | any> => {
+export const $get = (option: HttpRequestConfig): Promise<any> => {
   Object.assign(option, { method: 'GET' });
   return http.request(option);
 };
@@ -14,7 +14,7 @@ export const $get = (option: HttpRequestConfig): Promise<T | any> => {
  * post请求
  * @param option
  */
-export const $post = (option: HttpRequestConfig): Promise<T | any> => {
+export const $post = (option: HttpRequestConfig): Promise<any> => {
   Object.assign(option, { method: 'POST' });
   return http.request(option);
 };
@@ -23,7 +23,7 @@ export const $post = (option: HttpRequestConfig): Promise<T | any> => {
  * put请求
  * @param option
  */
-export const $put = (option: HttpRequestConfig): Promise<T | any> => {
+export const $put = (option: HttpRequestConfig): Promise<any> => {
   Object.assign(option, { method: 'PUT' });
   return http.request(option);
 };
@@ -32,7 +32,7 @@ export const $put = (option: HttpRequestConfig): Promise<T | any> => {
  * delete请求
  * @param option
  */
-export const $delete = (option: HttpRequestConfig): Promise<T | any> => {
+export const $delete = (option: HttpRequestConfig): Promise<any> => {
   Object.assign(option, { method: 'DELETE' });
   return http.request(option);
 };
