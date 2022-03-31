@@ -15,9 +15,8 @@ const erd: Erd = elementResizeDetectorMaker({
 });
 
 const resizeDirective: Directive = {
-  mounted(el: Element, binding?: DirectiveBinding<any>, vnode?: VNode) {
+  mounted(el: any, binding?: DirectiveBinding<any>, vnode?: VNode) {
     erd.listenTo(el, elem => {
-      console.log(el);
       const width = elem.offsetWidth;
       const height = elem.offsetHeight;
       if (binding?.instance) {

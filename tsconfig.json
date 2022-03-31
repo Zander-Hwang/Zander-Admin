@@ -12,7 +12,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "allowJs": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "experimentalDecorators": true,
     "noImplicitAny": false,
