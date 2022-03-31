@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3291972 */
+  src: url('iconfont.woff2?t=1648696525639') format('woff2'),
+       url('iconfont.woff?t=1648696525639') format('woff'),
+       url('iconfont.ttf?t=1648696525639') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zander-icon-android:before {
+  content: "\e622";
+}
+
+.zander-icon-ios:before {
+  content: "\e624";
+}
+
+.zander-icon-tubiao:before {
+  content: "\e60f";
+}
+
+.zander-icon-chrome:before {
+  content: "\ea09";
+}
+
+.zander-icon-empty:before {
+  content: "\e60b";
+}
+
+.zander-icon-zip:before {
+  content: "\e6bc";
+}
+
+.zander-icon-txt:before {
+  content: "\e7d0";
+}
+
+.zander-icon-email-variety:before {
+  content: "\e644";
+}
+
+.zander-icon-doc:before {
+  content: "\e64e";
+}
+
+.zander-icon-xls:before {
+  content: "\e615";
+}
+
+.zander-icon-rp-variety:before {
+  content: "\e643";
+}
+
+.zander-icon-pdf-variety:before {
+  content: "\e66a";
+}
+
+.zander-icon-email:before {
+  content: "\e64a";
+}
+
+.zander-icon-doc-variety:before {
+  content: "\e623";
+}
+
+.zander-icon-xls-variety:before {
+  content: "\e678";
+}
+
+.zander-icon-ppt-variety:before {
+  content: "\e66e";
+}
+
+.zander-icon-pdf:before {
+  content: "\e66f";
+}
+
+.zander-icon-txt-variety:before {
+  content: "\e605";
+}
+
+.zander-icon-zip-variety:before {
+  content: "\e680";
+}
+

@@ -16,6 +16,6 @@ export function configSvgIconsPlugin(isBuild: boolean) {
     iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
     svgoOptions: isBuild,
     //  图标ID的样式
-    symbolId: '[name]',
+    symbolId: 'icon-[dir]-[name]',
   });
 }

@@ -1,10 +1,11 @@
 import type { App } from 'vue';
 import { createRouter } from 'vue-router';
 import NProgress from '/@/utils/progress';
+import { getHistoryMode } from '/@/router/constant';
 
 // 创建路由实例
 export const router = createRouter({
-  history: '',
+  history: getHistoryMode(import.meta.env?.VITE_ROUTER_HISTORY),
   routes: [],
   strict: true,
   /* eslint-disable */
@@ -23,7 +24,7 @@ export const router = createRouter({
   /* eslint-enable */
 });
 
-router.beforeEach((to: toRouteType, _from, next) => {
+router.beforeEach((to: any, _from, next) => {
   console.log(to);
   console.log(_from);
   console.log(next);

@@ -7,8 +7,8 @@ import 'virtual:svg-icons-register';
 // 导入公共样式
 import '/@/style/index.scss';
 // 导入字体图标
-// import '/@/assets/iconfont/iconfont.js';
-// import '/@/assets/iconfont/iconfont.css';
+import '/@/assets/iconfont/iconfont.js';
+import '/@/assets/iconfont/iconfont.css';
 // 鼠标右键
 import 'v-contextmenu/dist/themes/default.css';
 import { createApp } from 'vue';
