@@ -5,7 +5,7 @@
  * @LastEditors: Zander
  * @LastEditTime: 2022/3/31 18:11
  */
-import Cookies from 'js-cookies';
+import Cookies from 'js-cookie';
 
 const TOKEN_KEY = 'authorized-token';
 

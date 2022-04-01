@@ -3,7 +3,7 @@
 
   function test() {
     console.log('测试接口');
-    testApi().then(res => {
+    testApi({}).then(res => {
       console.log(res);
     });
   }
