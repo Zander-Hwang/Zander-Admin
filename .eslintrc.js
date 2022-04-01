@@ -80,6 +80,8 @@ module.exports = {
         varsIgnorePattern: '^h$',
       },
     ],
+    // 关闭驼峰命名规则
+    'vue/multi-word-component-names': 'off',
     // ↓强制属性顺序
     'vue/attributes-order': 'off',
     // ↓强制每个组件应位于其自己的文件中

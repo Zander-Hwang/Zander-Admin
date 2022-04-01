@@ -1,21 +1,17 @@
-<script setup lang="ts">
-  import { testApi } from '/@/api/test';
-
-  function test() {
-    console.log('测试接口');
-    testApi({}).then(res => {
-      console.log(res);
-    });
-  }
-
-  test();
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <IconSvg icon="zander-icon-chrome" svg />
-  <IconSvg icon="zander-icon-ios" />
-  <IconSvg icon="close" svg />
+  <el-config-provider>
+    <router-view />
+  </el-config-provider>
 </template>
 
-<style></style>
+<script lang="ts">
+  import { defineComponent } from 'vue';
+  import { ElConfigProvider } from 'element-plus';
+
+  export default defineComponent({
+    name: 'App',
+    components: {
+      [ElConfigProvider.name]: ElConfigProvider,
+    },
+  });
+</script>
