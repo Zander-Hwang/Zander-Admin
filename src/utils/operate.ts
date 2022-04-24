@@ -44,6 +44,7 @@ export function useRafThrottle<T extends FunctionArgs>(fn: T): T {
     }
     locked = true;
     window.requestAnimationFrame(() => {
+      // @ts-ignore
       fn.apply(this, args);
       locked = false;
     });
