@@ -10,7 +10,7 @@ export const HOME_ROUTER = {
     icon: 'home-filled',
     title: '首页',
     i18n: true,
-    rank: 0,
+    resSeq: 0,
   },
   children: [
     {
@@ -34,7 +34,7 @@ export const ERROR_ROUTER = {
     icon: 'information-line',
     title: '错误页面',
     i18n: true,
-    rank: 9,
+    resSeq: 9,
   },
   children: [
     {
@@ -76,7 +76,7 @@ export const REDIRECT_ROUTER = {
     title: '首页',
     i18n: true,
     showLink: false,
-    rank: 104,
+    resSeq: 104,
   },
   children: [
     {
@@ -96,6 +96,6 @@ export const LOGIN_ROUTER = {
     title: '登录',
     showLink: false,
     i18n: true,
-    rank: 101,
+    resSeq: 101,
   },
 };

@@ -17,6 +17,35 @@ declare interface IAppState {
   device: string;
 }
 
+declare interface IPermissionState {
+  /**
+   * 许可代码列表
+   * 资源主键
+   * 用于控制页面细粒度控制
+   */
+  permCodeList: string[];
+
+  /**
+   * 菜单列表
+   */
+  menuList: object[];
+
+  /**
+   * 菜单树
+   */
+  menuTree: IMenu[];
+
+  /**
+   * 异步路由
+   */
+  asyncRouter: AppRouteModule[];
+
+  /**
+   * 动态路由是否已添加
+   */
+  isDynamicAddedRoute: boolean;
+}
+
 declare interface ISettingsState {
   title: string;
   fixedHeader: boolean;

@@ -2,11 +2,12 @@ import type { App } from 'vue';
 import { createRouter } from 'vue-router';
 import NProgress from '/@/utils/progress';
 import { getHistoryMode } from '/@/router/constant';
+import { constantRoutes } from '/@/router/routers';
 
 // 创建路由实例
 export const router = createRouter({
   history: getHistoryMode(import.meta.env?.VITE_ROUTER_HISTORY),
-  routes: [],
+  routes: constantRoutes,
   strict: true,
   /* eslint-disable */
   // @ts-ignore

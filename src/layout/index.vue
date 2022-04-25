@@ -1,1 +1,3 @@
-<template> 21212 </template>
+<template>
+  <router-view />
+</template>
