@@ -1,13 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
+import { devMode, prodMode } from '/@/utils/env';
 
 export function isDevFn(mode: string): boolean {
-  return mode === 'development';
+  return mode === devMode;
 }
 
 export function isProdFn(mode: string): boolean {
-  return mode === 'production';
+  return mode === prodMode;
 }
 
 /**
@@ -97,7 +98,7 @@ export function getRootPath(...dir: string[]) {
  * @param env
  */
 export function getConfigFileName(env: Record<string, any>) {
-  return `__PRODUCTION__${env.VITE_GLOB_APP_SHORT_NAME || '__APP'}__CONF__`
+  return `${env.VITE_NODE_ENV}__${env.VITE_GLOB_APP_SHORT_NAME || 'Zander__APP'}__CONF__`
     .toUpperCase()
     .replace(/\s/g, '');
 }
