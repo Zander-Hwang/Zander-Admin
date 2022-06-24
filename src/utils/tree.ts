@@ -33,12 +33,11 @@ class Tree {
       result = [],
       { id, children, pid } = config;
     for (const node of list) {
-      node[children] = node[children] || [];
       nodeMap.set(node[id], node);
     }
     for (const node of list) {
       const parent = nodeMap.get(node[pid]);
-      (parent ? parent.children : result).push(node);
+      (parent ? (parent[children] = parent[children] || []) : result).push(node);
     }
     return result;
   }
