@@ -21,7 +21,7 @@ class storageProxy implements ProxyStorage {
 
   constructor(storageModel: ProxyStorage, prefix?: string) {
     this.storage = storageModel;
-    this.prefix = prefix || 'Ab';
+    this.prefix = prefix || 'Zander';
   }
 
   /**
@@ -107,6 +107,6 @@ class sessionStorageProxy extends storageProxy implements ProxyStorage {
   }
 }
 
-export const localStorageUtils = new localStorageProxy(localStorage, 'Ab');
+export const localStorageUtils = new localStorageProxy(localStorage, 'Zander');
 
-export const sessionStorageUtils = new sessionStorageProxy(sessionStorage, 'Ab');
+export const sessionStorageUtils = new sessionStorageProxy(sessionStorage, 'Zander');
