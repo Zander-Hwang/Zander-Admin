@@ -123,7 +123,7 @@ const components = [
   ElStep,
 ];
 
-export function useElementPlus(app: App<Element>) {
+export function setupElementPlus(app: App<Element>) {
   // 注册组件
   components.forEach((component: Component) => {
     // @ts-ignore

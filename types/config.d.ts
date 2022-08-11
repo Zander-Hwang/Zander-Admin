@@ -5,6 +5,7 @@
  * @LastEditors: Zander
  * @LastEditTime: 2022/4/29 17:35
  */
+export type LocaleType = 'zh_CN' | 'en' | 'ru' | 'ja' | 'ko';
 
 export interface GlobEnvConfig {
   // Site title
