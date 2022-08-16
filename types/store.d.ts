@@ -5,7 +5,9 @@
  * @LastEditors: Zander
  * @LastEditTime: 2022/4/24 17:29
  */
-declare interface IAppState {
+import type { LocaleSetting } from '/#/config';
+
+export interface IAppState {
   sidebar: {
     opened: boolean;
     withoutAnimation: boolean;
@@ -13,11 +15,11 @@ declare interface IAppState {
     isClickHamburger: boolean;
   };
   layout: string;
-  language: string;
+  local: LocaleSetting;
   device: string;
 }
 
-declare interface IPermissionState {
+export interface IPermissionState {
   /**
    * 许可代码列表
    * 资源主键
@@ -46,13 +48,13 @@ declare interface IPermissionState {
   isDynamicAddedRoute: boolean;
 }
 
-declare interface ISettingsState {
+export interface ISettingsState {
   title: string;
   fixedHeader: boolean;
   hiddenSideBar: boolean;
 }
 
-declare interface IUserState {
+export interface IUserState {
   id: Nullable<string>;
   ip: Nullable<string>;
   loginName: Nullable<string>;

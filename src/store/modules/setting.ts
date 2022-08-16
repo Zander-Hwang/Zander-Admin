@@ -1,3 +1,4 @@
+import type { ISettingsState } from '/#/store';
 import { store } from '/@/store';
 import { defineStore } from 'pinia';
 

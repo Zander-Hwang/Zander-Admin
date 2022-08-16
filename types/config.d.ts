@@ -7,6 +7,21 @@
  */
 export type LocaleType = 'zh_CN' | 'en' | 'ru' | 'ja' | 'ko';
 
+export interface LocaleSetting {
+  // 是否显示语言切换配置
+  showPicker: boolean;
+  // 当前语言 和本地化相关
+  locale: LocaleType;
+  // 默认的语言
+  fallback: LocaleType;
+  // 可用的语言
+  availableLocales: LocaleType[];
+}
+
+export interface ProjectConfig {
+  showBreadCrumb: boolean;
+}
+
 export interface GlobEnvConfig {
   // Site title
   VITE_GLOB_APP_TITLE: string;

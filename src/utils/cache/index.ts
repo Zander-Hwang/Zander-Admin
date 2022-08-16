@@ -6,6 +6,8 @@
  * @LastEditTime: 2022/8/9 15:16
  */
 import type { RouteLocationNormalized } from 'vue-router';
+import type { IUserState } from '/#/store';
+import type { ProjectConfig } from '/#/config';
 import { createStorage as create, StorageParams } from './storage';
 import { DEFAULT_CACHE_TIME, enableEncryption } from '/@/config/encryption';
 import { getStorageKey } from '/@/utils/env';
@@ -14,7 +16,6 @@ import {
   TOKEN_KEY,
   USER_INFO_KEY,
   ROLES_KEY,
-  LOCK_INFO_KEY,
   PROJ_CFG_KEY,
   APP_LOCAL_CACHE_KEY,
   APP_SESSION_CACHE_KEY,
@@ -25,9 +26,8 @@ import { toRaw } from 'vue';
 
 interface BasicStore {
   [TOKEN_KEY]: string | number | null | undefined;
-  [USER_INFO_KEY]: UserInfo;
+  [USER_INFO_KEY]: IUserState;
   [ROLES_KEY]: string[];
-  [LOCK_INFO_KEY]: LockInfo;
   [PROJ_CFG_KEY]: ProjectConfig;
   [MULTIPLE_TABS_KEY]: RouteLocationNormalized[];
 }

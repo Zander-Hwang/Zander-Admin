@@ -1,3 +1,4 @@
+import type { IUserState } from '/#/store';
 import { defineStore } from 'pinia';
 import { store } from '/@/store';
 
