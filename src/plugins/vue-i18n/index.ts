@@ -1,6 +1,6 @@
 import type { App } from 'vue';
 import { I18n, createI18n } from 'vue-i18n';
-import { createI18nOptions } from '/@/locales';
+import { createI18nOptions } from '/@/locales/options';
 
 // 获取函数类型的返回类型
 export let i18n: ReturnType<typeof createI18n>;
