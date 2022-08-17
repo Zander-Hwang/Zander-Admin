@@ -14,6 +14,8 @@ import 'v-contextmenu/dist/themes/default.css';
 import { createApp } from 'vue';
 import App from './App.vue';
 import { MotionPlugin } from '@vueuse/motion';
+// vue-i18n国际化
+import { setupI18n } from '/@/plugins/vue-i18n';
 import { setupPlugins } from '/@/plugins';
 import { setupDirectives } from '/@/directives';
 import { setupRouter } from '/@/router';
@@ -21,6 +23,8 @@ import { setupStore } from '/@/store';
 
 async function setupVue() {
   const app = createApp(App);
+
+  await setupI18n(app);
 
   setupDirectives(app);
 
