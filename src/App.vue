@@ -20,8 +20,5 @@
         getElLocale,
       };
     },
-    mounted() {
-      console.log(this.getElLocale);
-    },
   });
 </script>
